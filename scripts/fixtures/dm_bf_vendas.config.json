@@ -1,0 +1,177 @@
+{
+  "projeto": "[DM][BF][POS][NOV][26]",
+  "expert": {
+    "nome": "Dra. Daniela Moleiro",
+    "curto": "Daniela"
+  },
+  "clickup": {
+    "workspace_id": "9013012202",
+    "tarefas": [
+      {
+        "id": "17tqamewv33",
+        "inserir_apos": "^Documento\\(s\\) de entrega: Copy Criativos Vídeo Vendas Produto",
+        "linhas": [
+          "doc"
+        ]
+      },
+      {
+        "id": "17tqamewv34",
+        "inserir_apos": "^Brutos:"
+      },
+      {
+        "id": "17tqamewv37",
+        "inserir_apos": "^Editados ADS -"
+      }
+    ]
+  },
+  "fontes": [
+    {
+      "nome": "Vendas",
+      "doc_id": "8ckf9qa-751293",
+      "page_id": "8ckf9qa-748913",
+      "copia": {
+        "inicio": "Copy Criativos Vídeo Vendas Produto \\[DM\\]\\[BF\\]\\[POS\\]\\[NOV\\]\\[26\\]",
+        "fim": "=+",
+        "adaptar": [
+          {
+            "rotulo": "regras da fase (público, prazos; tem itálico)",
+            "padrao": "^\\*\\*Regras desta fase.*$",
+            "troca": "",
+            "vezes": 1
+          },
+          {
+            "rotulo": "orientação para o editor (lettering do valor)",
+            "padrao": "^\\*\\*\\S+ Orientação para o editor.*$",
+            "troca": "",
+            "vezes": 1
+          },
+          {
+            "rotulo": "nota do editor com o valor vira a direção de apontar para a tela",
+            "padrao": " \\\\\\[EDITOR: inserir \"56% DE DESCONTO[^\"]*\"\\\\\\]",
+            "troca": " [aponta para o lado ou para baixo da tela]",
+            "vezes": 8
+          },
+          {
+            "rotulo": "nota do editor da entrada de R$ 100",
+            "padrao": " \\\\\\[EDITOR: inserir \"NO BOLETO[^\"]*\"\\\\\\]",
+            "troca": "",
+            "vezes": 1
+          },
+          {
+            "rotulo": "frases de presente soltas (da configuração do ADS 01)",
+            "padrao": "^(As três primeiras matrículas ganham)",
+            "troca": "[Cada frase de presente é gravada como frase solta, para o editor cortar sem regravar.]\n\n\\1",
+            "vezes": 1
+          }
+        ],
+        "descartar": [
+          "Cadência:",
+          "Anúncio:",
+          "Configuração:",
+          "Headline"
+        ],
+        "manter": [
+          {
+            "rotulo": "Quem grava:",
+            "dividir_em": [
+              "Orientações de gravação:"
+            ]
+          }
+        ],
+        "itens": {
+          "titulo": "ADS (\\d{2}) \\[.+\\]",
+          "numeros": [
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08"
+          ],
+          "manter": [],
+          "texto": "Texto para gravação:",
+          "termina_no_cta": false
+        },
+        "proibido": "tr[áa]fego|postar|postagem|configura|verba|\\bcpl\\b|\\bcpm\\b|reten[çc][ãa]o|finados|campanha|junior|legacy|pausar|heygen|let[íi]cia|oncolog|dentista|\\binca\\b|p[úu]blico|\\bteste\\b|legenda|\\[editor:|banner|edi[çc][ãa]o|\\bppk\\b|349"
+      }
+    },
+    {
+      "nome": "Reta final (áudios)",
+      "doc_id": "8ckf9qa-751293",
+      "page_id": "8ckf9qa-748913",
+      "copia": {
+        "inicio": "RETA FINAL . vídeos em motion",
+        "fim": "RV 05 \\[.+\\]",
+        "adaptar": [
+          {
+            "rotulo": "configuração do bloco vira orientação dos áudios",
+            "padrao": "^\\*\\*Configuração do bloco:\\*\\* cinco vídeos em motion.*$",
+            "troca": "**Áudios da reta final (RV 01 a 04):** vídeos em motion, sem imagem nova da Dra. Daniela Moleiro: ela grava só o áudio, na mesma sessão dos ADS.",
+            "vezes": 1
+          },
+          {
+            "rotulo": "finais gravados à parte",
+            "padrao": "^\\*\\*Finais, gravados à parte:\\*\\*$",
+            "troca": "[Finais, gravados à parte]",
+            "vezes": 3
+          },
+          {
+            "rotulo": "frases a mais das versões",
+            "padrao": "^\\*\\*(Frases a mais, [^*]+):\\*\\*$",
+            "troca": "[\\1]",
+            "vezes": 2
+          },
+          {
+            "rotulo": "orientações para a edição (lista)",
+            "padrao": "^\\*\\s+.*$",
+            "troca": "",
+            "vezes": 21
+          }
+        ],
+        "descartar": [
+          "Configuração:",
+          "Orientações para a edição"
+        ],
+        "manter": [
+          {
+            "rotulo": "Áudios da reta final (RV 01 a 04):"
+          }
+        ],
+        "itens": {
+          "titulo": "(RV \\d{2}) \\[.+\\]",
+          "numeros": [
+            "RV 01",
+            "RV 02",
+            "RV 03",
+            "RV 04"
+          ],
+          "manter": [],
+          "texto": "Texto para gravação:",
+          "termina_no_cta": false
+        },
+        "proibido": "tr[áa]fego|postar|postagem|configura|verba|\\bcpl\\b|\\bcpm\\b|reten[çc][ãa]o|finados|campanha|junior|legacy|pausar|heygen|let[íi]cia|oncolog|dentista|\\binca\\b|p[úu]blico|\\bteste\\b|legenda|\\[editor:|banner|edi[çc][ãa]o|349"
+      }
+    }
+  ],
+  "drive": {
+    "projeto_id": "1Z3ywNfJKCHIOvhQQcI94JqEwzff-t8Xn",
+    "copy": {
+      "id": "1W8IC1I21WcjMEgQJZsvEYLNWZZ74HsKA",
+      "prefixo": "1.Copy"
+    },
+    "bruto": {
+      "id": "1TihVoTUoBbdsptED2kPK-LMimafJva2y",
+      "prefixo": "14.Arquivo Bruto"
+    },
+    "papel_pasta_upload": "fileOrganizer",
+    "papel_doc": "writer",
+    "categoria": "4. Criativos ADS de Venda do Produto",
+    "pasta_upload": "Criativos Vídeo Vendas Produto {projeto}"
+  },
+  "doc": {
+    "nome": "Copy Criativos Vídeo Vendas Produto {projeto}",
+    "titulo_orientacoes": "ORIENTAÇÕES DE GRAVAÇÃO"
+  }
+}

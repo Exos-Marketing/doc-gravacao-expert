@@ -1,0 +1,37 @@
+{
+  "projeto": "[ET][PEP][FLS][26]",
+  "expert": {"nome": "Elen Tolentino", "curto": "Elen"},
+  "clickup": {
+    "workspace_id": "9013012202",
+    "copia": {"doc_id": "8ckf9qa-546033", "page_id": "8ckf9qa-546453"},
+    "tarefa": {"id": "86akbk0q2", "inserir_apos": "^Planejamento Estratégico:"}
+  },
+  "copia": {
+    "inicio": "Copy Criativos Vídeo \\[ET\\]\\[PEP\\]\\[FLS\\]\\[26\\].*",
+    "fim": "=+",
+    "adaptar": [],
+    "descartar": ["Configuração:"],
+    "manter": [
+      {"rotulo": "Quem grava:", "dividir_em": ["Orientações de gravação:"]},
+      {"rotulo": "CTA (fecha os três):", "cta": true}
+    ],
+    "itens": {
+      "titulo": "ADS (\\d{2}) \\[.+\\]",
+      "numeros": ["01", "02", "03"],
+      "manter": ["Headline:"],
+      "texto": "Texto para gravação:",
+      "termina_no_cta": true
+    },
+    "proibido": "junior|\\bcpl\\b|pausar|legacy|configura"
+  },
+  "drive": {
+    "projeto_id": "1OHN9rUIZY9p4Lz_34i-Awq2k2YMrYQqn",
+    "copy": {"id": "167ohmPBqJNRHu2ihubl6hVL20Nm3Pgy2", "prefixo": "1.Copy"},
+    "bruto": {"id": "14NGi3mNtDc_NgT9_sHjrk9ItqlhPLcP3", "prefixo": "14.Arquivo Bruto"},
+    "categoria": "6. Criativos ADS de Captação",
+    "pasta_upload": "Criativos Vídeo {projeto}",
+    "papel_pasta_upload": "fileOrganizer",
+    "papel_doc": "writer"
+  },
+  "doc": {"nome": "Copy Criativos Vídeo {projeto}", "titulo_orientacoes": "ORIENTAÇÕES DE GRAVAÇÃO"}
+}

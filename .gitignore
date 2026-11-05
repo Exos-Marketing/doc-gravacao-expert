@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+node_modules/
+
+# Credenciais nunca entram: os tokens moram no Keychain do macOS
+*.env
+.env

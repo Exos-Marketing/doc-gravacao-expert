@@ -1,0 +1,71 @@
+{
+  "projeto": "[DM][BF][POS][NOV][26]",
+  "expert": {"nome": "Dra. Daniela Moleiro", "curto": "Daniela"},
+  "clickup": {
+    "workspace_id": "9013012202",
+    "tarefa": {"id": "17tqamewuwp", "inserir_apos": "^Copy:"}
+  },
+  "fontes": [
+    {
+      "nome": "Trailer",
+      "doc_id": "8ckf9qa-750573",
+      "page_id": "8ckf9qa-748193",
+      "copia": {
+        "inicio": "Copy Trailer Antecipação \\[DM\\]\\[BF\\]\\[POS\\]\\[NOV\\]\\[26\\]",
+        "fim": "=+",
+        "adaptar": [
+          {"rotulo": "configuração do trailer (campanha, público, banner)", "padrao": "^Subir na campanha de tráfego pago .*$", "troca": "", "vezes": 1},
+          {"rotulo": "link do exemplo do formato vira texto", "padrao": "Exemplo do formato: \\[[^\\]]+\\]\\(https://www\\.instagram\\.com/reel/DO_OCNgjY4a/\\)\\.", "troca": "Exemplo do formato: instagram.com/reel/DO\\\\_OCNgjY4a.", "vezes": 1},
+          {"rotulo": "separador", "padrao": "^\\* \\* \\*$", "troca": "", "vezes": 1}
+        ],
+        "descartar": ["Anúncio:", "Configuração:", "Texto na tela"],
+        "manter": [],
+        "itens": {
+          "titulo": "(TRAILER) \\[.+\\]",
+          "numeros": ["TRAILER"],
+          "manter": ["Orientações de gravação:"],
+          "texto": "Texto para gravação:",
+          "termina_no_cta": false
+        },
+        "proibido": "tr[áa]fego|org[âa]nic|postar|postagem|configura|verba|\\bcpl\\b|\\bcpm\\b|reten[çc][ãa]o|finados|\\bppk\\b|p[úu]blico|campanha|\\bteste\\b|banner|edi[çc][ãa]o|legenda|junior|legacy|pausar"
+      }
+    },
+    {
+      "nome": "Vídeos",
+      "doc_id": "8ckf9qa-750553",
+      "page_id": "8ckf9qa-748173",
+      "copia": {
+        "inicio": "Copy de Criativo Antecipação Vídeo \\[DM\\]\\[BF\\]\\[POS\\]\\[NOV\\]\\[26\\]",
+        "fim": "=+",
+        "adaptar": [
+          {"rotulo": "rótulo interno das orientações", "padrao": " \\(para o documento de gravação\\)", "troca": "", "vezes": 1},
+          {"rotulo": "aviso interno da variação livre (teste, tráfego, orgânico)", "padrao": "^\\*\\*VARIAÇÃO LIVRE PARA TESTE DE RETENÇÃO\\*\\*.*$", "troca": "", "vezes": 1},
+          {"rotulo": "roteiro-guia do ADS 05 em linha própria", "padrao": "^(\\*\\*Texto para gravação:\\*\\*) (\\(roteiro-guia;.+\\))$", "troca": "\\1\n\n\\2", "vezes": 1},
+          {"rotulo": "separadores", "padrao": "^\\* \\* \\*$", "troca": "", "vezes": 4}
+        ],
+        "descartar": ["Regras desta fase", "Para o time de tráfego:", "Anúncio:", "Configuração:", "Tráfego pago:", "Orgânico:"],
+        "manter": [
+          {"rotulo": "Orientações de gravação:"}
+        ],
+        "itens": {
+          "titulo": "ADS (\\d{2}) \\[.+\\]",
+          "numeros": ["02", "03", "04", "05"],
+          "manter": [],
+          "texto": "Texto para gravação:",
+          "termina_no_cta": false
+        },
+        "proibido": "tr[áa]fego|org[âa]nic|postar|postagem|configura|verba|\\bcpl\\b|\\bcpm\\b|reten[çc][ãa]o|finados|\\bppk\\b|p[úu]blico|campanha|\\bteste\\b|banner|edi[çc][ãa]o|legenda|junior|legacy|pausar"
+      }
+    }
+  ],
+  "drive": {
+    "projeto_id": "1Z3ywNfJKCHIOvhQQcI94JqEwzff-t8Xn",
+    "copy": {"id": "1W8IC1I21WcjMEgQJZsvEYLNWZZ74HsKA", "prefixo": "1.Copy"},
+    "bruto": {"id": "1TihVoTUoBbdsptED2kPK-LMimafJva2y", "prefixo": "14.Arquivo Bruto"},
+    "categoria": "1. Criativos ADS de Antecipação",
+    "pasta_upload": "Criativos Vídeo Antecipação {projeto}",
+    "papel_pasta_upload": "fileOrganizer",
+    "papel_doc": "writer"
+  },
+  "doc": {"nome": "Copy de Criativo Antecipação Vídeo {projeto}", "titulo_orientacoes": "ORIENTAÇÕES DE GRAVAÇÃO"}
+}

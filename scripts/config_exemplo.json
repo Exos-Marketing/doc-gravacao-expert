@@ -1,0 +1,44 @@
+{
+  "projeto": "[DM][PEP][FLS][26]",
+  "expert": {"nome": "Dra. Daniela Moleiro", "curto": "Daniela"},
+  "clickup": {
+    "workspace_id": "9013012202",
+    "copia": {"doc_id": "8ckf9qa-746253", "page_id": "8ckf9qa-744333"},
+    "tarefa": {"id": "17tqameqvg8", "inserir_apos": "^Documento de entrega da copy:"}
+  },
+  "copia": {
+    "inicio": "PARTE 2 · ROTEIROS DE VÍDEO.*",
+    "fim": "=+",
+    "adaptar": [
+      {"rotulo": "remissão à arte da Parte 1", "padrao": " \\(arte na Parte 1\\)", "troca": "", "vezes": 1}
+    ],
+    "descartar": ["Configuração:", "Texto do anúncio:"],
+    "manter": [
+      {"rotulo": "Quem grava:", "dividir_em": ["Orientações de gravação:"]},
+      {"rotulo": "Nome falado:"},
+      {"rotulo": "Fala neutralizada:"},
+      {"rotulo": "Cenário e figurino:"},
+      {"rotulo": "Identificação na tela"},
+      {"rotulo": "Tomada livre:"},
+      {"rotulo": "CTA (fecha os três):", "cta": true}
+    ],
+    "itens": {
+      "titulo": "ADS (\\d{2}) \\[.+\\]",
+      "numeros": ["12", "13", "14"],
+      "manter": ["Headline:"],
+      "texto": "Texto para gravação:",
+      "termina_no_cta": true
+    },
+    "proibido": "junior|\\bcpl\\b|\\bcpm\\b|pausar|legacy|configura|\\bppk\\b|parte [12]\\b|turno|verba|texto prim[áa]rio"
+  },
+  "drive": {
+    "projeto_id": "1tb1bgdUlfPI_84m2VNu6wuZr_sIzqHOB",
+    "copy": {"id": "1aWZdL8KLvxHZSyWkcYgPJPoeWFg_H8EB", "prefixo": "1.Copy"},
+    "bruto": {"id": "1n-kAR6YxL-ykxTD0hDsprMPqfRXOXt25", "prefixo": "14.Arquivo Bruto"},
+    "categoria": "6. Criativos ADS de Captação",
+    "pasta_upload": "Criativos Vídeo {projeto}",
+    "papel_pasta_upload": "fileOrganizer",
+    "papel_doc": "writer"
+  },
+  "doc": {"nome": "Copy Criativos Vídeo {projeto}", "titulo_orientacoes": "ORIENTAÇÕES DE GRAVAÇÃO"}
+}
